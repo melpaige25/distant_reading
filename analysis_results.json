@@ -1,0 +1,1067 @@
+[
+  {
+    "filename": "pg2527.txt",
+    "title": "The Sorrows of Young Werther",
+    "author": "Johann Wolfgang von Goethe",
+    "word_frequencies": {
+      "charlotte": 180,
+      "one": 125,
+      "upon": 120,
+      "heart": 107,
+      "would": 102,
+      "could": 97,
+      "man": 89,
+      "albert": 80,
+      "werther": 78,
+      "said": 78,
+      "little": 74,
+      "shall": 70,
+      "see": 70,
+      "time": 70,
+      "like": 68,
+      "know": 64,
+      "much": 63,
+      "dear": 61,
+      "love": 59,
+      "friend": 59,
+      "every": 56,
+      "thy": 55,
+      "soul": 53,
+      "may": 53,
+      "us": 53,
+      "never": 53,
+      "must": 53,
+      "yet": 51,
+      "often": 50,
+      "children": 49,
+      "world": 48,
+      "thou": 47,
+      "eyes": 47,
+      "feel": 46,
+      "happy": 45,
+      "nothing": 45,
+      "hand": 44,
+      "tears": 43,
+      "whole": 43,
+      "around": 43,
+      "still": 42,
+      "mind": 41,
+      "first": 41,
+      "place": 41,
+      "last": 41,
+      "wilhelm": 41,
+      "without": 41,
+      "find": 40,
+      "day": 39,
+      "felt": 39,
+      "made": 39,
+      "well": 38,
+      "thought": 38,
+      "happiness": 38,
+      "good": 36,
+      "ever": 36,
+      "even": 36,
+      "might": 36,
+      "old": 36,
+      "life": 36,
+      "went": 36,
+      "say": 36,
+      "came": 36,
+      "voice": 36,
+      "moment": 35,
+      "till": 35,
+      "heaven": 32,
+      "found": 32,
+      "father": 32,
+      "away": 32,
+      "many": 31,
+      "make": 31,
+      "morning": 31,
+      "alone": 30,
+      "hear": 30,
+      "night": 30,
+      "nature": 29,
+      "oh": 29,
+      "great": 29,
+      "toward": 29,
+      "another": 29,
+      "give": 28,
+      "days": 28,
+      "everything": 28,
+      "whose": 28,
+      "heard": 28,
+      "look": 28,
+      "became": 28,
+      "god": 27,
+      "house": 27,
+      "take": 27,
+      "evening": 27,
+      "longer": 26,
+      "think": 26,
+      "come": 26,
+      "continued": 26,
+      "saw": 26,
+      "servant": 26,
+      "leave": 25,
+      "mother": 25
+    },
+    "sentiment": {
+      "overall": {
+        "neg": 0.102,
+        "neu": 0.722,
+        "pos": 0.175,
+        "compound": 1.0
+      },
+      "average": {
+        "positive": 0.12491649356044868,
+        "negative": 0.08185500623182383,
+        "neutral": 0.7932363938512672,
+        "compound": 0.1199227253842958
+      },
+      "sentence_count": 2407
+    },
+    "style": {
+      "avg_sentence_length": 20.83,
+      "avg_word_length": 4.31,
+      "sentence_count": 2407,
+      "word_count": 42182,
+      "unique_words": 5063,
+      "type_token_ratio": 0.12,
+      "lexical_diversity": 0.2226
+    },
+    "distinctive_words": [
+      {
+        "word": "upon",
+        "score": 0.2969
+      },
+      {
+        "word": "would",
+        "score": 0.2511
+      },
+      {
+        "word": "one",
+        "score": 0.2511
+      },
+      {
+        "word": "could",
+        "score": 0.2435
+      },
+      {
+        "word": "man",
+        "score": 0.2235
+      },
+      {
+        "word": "shall",
+        "score": 0.2078
+      },
+      {
+        "word": "said",
+        "score": 0.1958
+      },
+      {
+        "word": "much",
+        "score": 0.187
+      },
+      {
+        "word": "little",
+        "score": 0.1858
+      },
+      {
+        "word": "see",
+        "score": 0.1758
+      },
+      {
+        "word": "time",
+        "score": 0.1758
+      },
+      {
+        "word": "love",
+        "score": 0.1751
+      },
+      {
+        "word": "like",
+        "score": 0.1707
+      },
+      {
+        "word": "know",
+        "score": 0.1607
+      },
+      {
+        "word": "must",
+        "score": 0.1573
+      },
+      {
+        "word": "may",
+        "score": 0.1573
+      },
+      {
+        "word": "never",
+        "score": 0.1573
+      },
+      {
+        "word": "yet",
+        "score": 0.1514
+      },
+      {
+        "word": "first",
+        "score": 0.1447
+      },
+      {
+        "word": "last",
+        "score": 0.1447
+      }
+    ]
+  },
+  {
+    "filename": "pg34828.txt",
+    "title": "Sentimental Education; Or, The History of a Young Man. Volume 1",
+    "author": "Gustave Flaubert",
+    "word_frequencies": {
+      "frederick": 569,
+      "arnoux": 390,
+      "would": 318,
+      "one": 274,
+      "said": 272,
+      "madame": 202,
+      "made": 183,
+      "man": 180,
+      "little": 177,
+      "could": 175,
+      "two": 172,
+      "time": 166,
+      "like": 164,
+      "deslauriers": 139,
+      "back": 123,
+      "went": 118,
+      "order": 118,
+      "way": 112,
+      "young": 106,
+      "without": 99,
+      "go": 99,
+      "make": 97,
+      "come": 96,
+      "came": 95,
+      "towards": 93,
+      "see": 89,
+      "long": 87,
+      "three": 87,
+      "took": 85,
+      "eyes": 84,
+      "might": 83,
+      "well": 83,
+      "great": 80,
+      "good": 80,
+      "every": 80,
+      "house": 80,
+      "nothing": 80,
+      "day": 80,
+      "hussonnet": 80,
+      "know": 78,
+      "old": 78,
+      "began": 77,
+      "away": 77,
+      "side": 76,
+      "face": 75,
+      "another": 74,
+      "take": 74,
+      "going": 73,
+      "de": 72,
+      "head": 72,
+      "even": 72,
+      "kept": 71,
+      "first": 71,
+      "dambreuse": 71,
+      "front": 70,
+      "much": 70,
+      "left": 70,
+      "last": 69,
+      "gave": 69,
+      "look": 69,
+      "felt": 69,
+      "people": 68,
+      "got": 68,
+      "ah": 68,
+      "door": 67,
+      "rosanette": 67,
+      "seemed": 66,
+      "get": 66,
+      "evening": 65,
+      "mind": 65,
+      "place": 63,
+      "found": 63,
+      "woman": 61,
+      "hand": 61,
+      "however": 61,
+      "asked": 61,
+      "round": 60,
+      "things": 59,
+      "air": 58,
+      "thought": 58,
+      "friend": 57,
+      "end": 56,
+      "pellerin": 56,
+      "rue": 55,
+      "let": 55,
+      "thousand": 54,
+      "appeared": 53,
+      "along": 53,
+      "close": 53,
+      "men": 53,
+      "sénécal": 53,
+      "monsieur": 52,
+      "large": 52,
+      "love": 51,
+      "seen": 51,
+      "brought": 51,
+      "women": 50,
+      "right": 49,
+      "replied": 49,
+      "give": 49
+    },
+    "sentiment": {
+      "overall": {
+        "neg": 0.068,
+        "neu": 0.817,
+        "pos": 0.115,
+        "compound": 1.0
+      },
+      "average": {
+        "positive": 0.09139665211062592,
+        "negative": 0.05226437409024745,
+        "neutral": 0.856337154294032,
+        "compound": 0.07955129184861719
+      },
+      "sentence_count": 5496
+    },
+    "style": {
+      "avg_sentence_length": 18.89,
+      "avg_word_length": 4.44,
+      "sentence_count": 5496,
+      "word_count": 85280,
+      "unique_words": 8778,
+      "type_token_ratio": 0.1029,
+      "lexical_diversity": 0.2647
+    },
+    "distinctive_words": [
+      {
+        "word": "young",
+        "score": 0.2213
+      },
+      {
+        "word": "two",
+        "score": 0.2213
+      },
+      {
+        "word": "way",
+        "score": 0.1862
+      },
+      {
+        "word": "went",
+        "score": 0.1862
+      },
+      {
+        "word": "back",
+        "score": 0.1862
+      },
+      {
+        "word": "without",
+        "score": 0.1843
+      },
+      {
+        "word": "go",
+        "score": 0.1843
+      },
+      {
+        "word": "make",
+        "score": 0.1806
+      },
+      {
+        "word": "good",
+        "score": 0.177
+      },
+      {
+        "word": "long",
+        "score": 0.162
+      },
+      {
+        "word": "head",
+        "score": 0.1593
+      },
+      {
+        "word": "made",
+        "score": 0.1575
+      },
+      {
+        "word": "man",
+        "score": 0.1575
+      },
+      {
+        "word": "time",
+        "score": 0.1575
+      },
+      {
+        "word": "said",
+        "score": 0.1575
+      },
+      {
+        "word": "would",
+        "score": 0.1575
+      },
+      {
+        "word": "one",
+        "score": 0.1575
+      },
+      {
+        "word": "could",
+        "score": 0.1575
+      },
+      {
+        "word": "like",
+        "score": 0.1575
+      },
+      {
+        "word": "little",
+        "score": 0.1575
+      }
+    ]
+  },
+  {
+    "filename": "pg56007.txt",
+    "title": "The Sagamore of Saco",
+    "author": "Elizabeth Oakes Prince Smith",
+    "word_frequencies": {
+      "hope": 249,
+      "upon": 248,
+      "bonyton": 172,
+      "john": 170,
+      "one": 134,
+      "would": 98,
+      "acashee": 93,
+      "vines": 91,
+      "like": 88,
+      "eyes": 86,
+      "said": 86,
+      "little": 85,
+      "head": 73,
+      "long": 72,
+      "hand": 68,
+      "could": 66,
+      "never": 65,
+      "go": 64,
+      "man": 61,
+      "well": 60,
+      "mistress": 60,
+      "sagamore": 56,
+      "away": 56,
+      "indian": 55,
+      "time": 54,
+      "face": 53,
+      "people": 53,
+      "old": 53,
+      "sir": 51,
+      "look": 51,
+      "see": 50,
+      "might": 50,
+      "even": 50,
+      "day": 50,
+      "way": 49,
+      "hair": 47,
+      "white": 47,
+      "woman": 47,
+      "know": 46,
+      "great": 46,
+      "women": 46,
+      "richard": 45,
+      "stood": 45,
+      "made": 45,
+      "heart": 45,
+      "till": 44,
+      "length": 44,
+      "two": 42,
+      "saw": 42,
+      "shall": 41,
+      "water": 41,
+      "falls": 41,
+      "come": 41,
+      "feet": 41,
+      "wild": 40,
+      "back": 40,
+      "indians": 40,
+      "still": 40,
+      "turned": 39,
+      "looked": 39,
+      "young": 39,
+      "youth": 39,
+      "seen": 39,
+      "went": 39,
+      "must": 38,
+      "nothing": 38,
+      "child": 38,
+      "saco": 37,
+      "found": 37,
+      "forest": 36,
+      "arms": 36,
+      "years": 36,
+      "warriors": 36,
+      "harvey": 36,
+      "voice": 35,
+      "say": 35,
+      "rock": 35,
+      "thus": 35,
+      "chief": 35,
+      "tribe": 35,
+      "girl": 34,
+      "life": 34,
+      "father": 34,
+      "men": 34,
+      "many": 34,
+      "every": 34,
+      "mother": 34,
+      "came": 33,
+      "yet": 33,
+      "knew": 32,
+      "words": 32,
+      "hands": 32,
+      "eye": 32,
+      "lost": 32,
+      "may": 31,
+      "tell": 31,
+      "left": 31,
+      "mind": 30,
+      "light": 30,
+      "daughter": 29
+    },
+    "sentiment": {
+      "overall": {
+        "neg": 0.092,
+        "neu": 0.762,
+        "pos": 0.146,
+        "compound": 1.0
+      },
+      "average": {
+        "positive": 0.0911311553030303,
+        "negative": 0.061008049242424235,
+        "neutral": 0.8478636363636364,
+        "compound": 0.10234867424242425
+      },
+      "sentence_count": 2112
+    },
+    "style": {
+      "avg_sentence_length": 26.21,
+      "avg_word_length": 4.34,
+      "sentence_count": 2112,
+      "word_count": 45579,
+      "unique_words": 6200,
+      "type_token_ratio": 0.136,
+      "lexical_diversity": 0.243
+    },
+    "distinctive_words": [
+      {
+        "word": "upon",
+        "score": 0.2891
+      },
+      {
+        "word": "head",
+        "score": 0.2509
+      },
+      {
+        "word": "one",
+        "score": 0.2445
+      },
+      {
+        "word": "would",
+        "score": 0.2396
+      },
+      {
+        "word": "like",
+        "score": 0.2152
+      },
+      {
+        "word": "said",
+        "score": 0.2103
+      },
+      {
+        "word": "eyes",
+        "score": 0.2103
+      },
+      {
+        "word": "long",
+        "score": 0.2081
+      },
+      {
+        "word": "little",
+        "score": 0.2078
+      },
+      {
+        "word": "never",
+        "score": 0.1879
+      },
+      {
+        "word": "go",
+        "score": 0.185
+      },
+      {
+        "word": "hand",
+        "score": 0.1663
+      },
+      {
+        "word": "could",
+        "score": 0.1614
+      },
+      {
+        "word": "face",
+        "score": 0.1532
+      },
+      {
+        "word": "man",
+        "score": 0.1491
+      },
+      {
+        "word": "well",
+        "score": 0.1467
+      },
+      {
+        "word": "two",
+        "score": 0.1443
+      },
+      {
+        "word": "way",
+        "score": 0.1417
+      },
+      {
+        "word": "away",
+        "score": 0.1369
+      },
+      {
+        "word": "young",
+        "score": 0.134
+      }
+    ]
+  },
+  {
+    "filename": "pg56577.txt",
+    "title": "Adrian Savage: A Novel",
+    "author": "Lucas Malet",
+    "word_frequencies": {
+      "adrian": 487,
+      "upon": 430,
+      "one": 356,
+      "would": 335,
+      "said": 302,
+      "joanna": 300,
+      "little": 297,
+      "challoner": 275,
+      "man": 272,
+      "could": 253,
+      "margaret": 224,
+      "young": 212,
+      "much": 207,
+      "still": 199,
+      "quite": 198,
+      "back": 187,
+      "though": 185,
+      "must": 181,
+      "yet": 176,
+      "know": 173,
+      "even": 166,
+      "yes": 161,
+      "might": 160,
+      "may": 159,
+      "time": 156,
+      "since": 153,
+      "madame": 151,
+      "well": 150,
+      "leger": 146,
+      "good": 145,
+      "came": 144,
+      "never": 143,
+      "smyrthwaite": 141,
+      "dear": 141,
+      "rather": 140,
+      "eyes": 139,
+      "see": 138,
+      "like": 138,
+      "woman": 138,
+      "poor": 138,
+      "savage": 134,
+      "go": 134,
+      "face": 132,
+      "felt": 131,
+      "away": 131,
+      "come": 127,
+      "last": 126,
+      "think": 123,
+      "make": 122,
+      "thought": 121,
+      "hands": 118,
+      "long": 117,
+      "made": 116,
+      "head": 116,
+      "hand": 115,
+      "mind": 113,
+      "gabrielle": 112,
+      "rené": 112,
+      "great": 110,
+      "first": 110,
+      "life": 107,
+      "really": 106,
+      "went": 105,
+      "put": 105,
+      "two": 104,
+      "far": 104,
+      "house": 99,
+      "take": 99,
+      "things": 99,
+      "looked": 98,
+      "let": 98,
+      "miss": 98,
+      "say": 98,
+      "love": 95,
+      "stood": 95,
+      "right": 94,
+      "room": 94,
+      "tell": 94,
+      "dax": 93,
+      "us": 91,
+      "left": 90,
+      "almost": 89,
+      "beauchamp": 88,
+      "without": 88,
+      "ever": 87,
+      "anastasia": 87,
+      "shall": 87,
+      "every": 86,
+      "old": 85,
+      "whole": 85,
+      "always": 84,
+      "toward": 84,
+      "found": 83,
+      "papa": 81,
+      "black": 80,
+      "nothing": 80,
+      "indeed": 80,
+      "ah": 80,
+      "way": 78,
+      "turned": 77
+    },
+    "sentiment": {
+      "overall": {
+        "neg": 0.109,
+        "neu": 0.741,
+        "pos": 0.15,
+        "compound": 1.0
+      },
+      "average": {
+        "positive": 0.11091197590919619,
+        "negative": 0.08842958072735696,
+        "neutral": 0.8006582117211027,
+        "compound": 0.06361441973592773
+      },
+      "sentence_count": 8634
+    },
+    "style": {
+      "avg_sentence_length": 19.67,
+      "avg_word_length": 4.54,
+      "sentence_count": 8634,
+      "word_count": 139252,
+      "unique_words": 12060,
+      "type_token_ratio": 0.0866,
+      "lexical_diversity": 0.2816
+    },
+    "distinctive_words": [
+      {
+        "word": "young",
+        "score": 0.1788
+      },
+      {
+        "word": "two",
+        "score": 0.1788
+      },
+      {
+        "word": "good",
+        "score": 0.1788
+      },
+      {
+        "word": "first",
+        "score": 0.1788
+      },
+      {
+        "word": "head",
+        "score": 0.1788
+      },
+      {
+        "word": "felt",
+        "score": 0.1788
+      },
+      {
+        "word": "last",
+        "score": 0.1788
+      },
+      {
+        "word": "yet",
+        "score": 0.1504
+      },
+      {
+        "word": "upon",
+        "score": 0.1504
+      },
+      {
+        "word": "went",
+        "score": 0.1504
+      },
+      {
+        "word": "must",
+        "score": 0.1504
+      },
+      {
+        "word": "never",
+        "score": 0.1504
+      },
+      {
+        "word": "may",
+        "score": 0.1504
+      },
+      {
+        "word": "still",
+        "score": 0.1504
+      },
+      {
+        "word": "face",
+        "score": 0.1504
+      },
+      {
+        "word": "back",
+        "score": 0.1504
+      },
+      {
+        "word": "make",
+        "score": 0.1504
+      },
+      {
+        "word": "long",
+        "score": 0.1504
+      },
+      {
+        "word": "go",
+        "score": 0.1504
+      },
+      {
+        "word": "mind",
+        "score": 0.1504
+      }
+    ]
+  },
+  {
+    "filename": "pg68625.txt",
+    "title": "The red wizard, or, the cave captive",
+    "author": "Edward Sylvester Ellis",
+    "word_frequencies": {
+      "would": 199,
+      "one": 130,
+      "upon": 128,
+      "could": 125,
+      "ther": 101,
+      "yer": 89,
+      "even": 79,
+      "er": 76,
+      "scout": 75,
+      "little": 73,
+      "eyes": 68,
+      "come": 64,
+      "ter": 64,
+      "girl": 64,
+      "time": 63,
+      "great": 63,
+      "like": 63,
+      "tell": 59,
+      "man": 58,
+      "olive": 58,
+      "medicine": 58,
+      "white": 58,
+      "well": 56,
+      "never": 55,
+      "must": 54,
+      "squaw": 53,
+      "let": 53,
+      "long": 53,
+      "heart": 52,
+      "back": 51,
+      "every": 51,
+      "cloud": 51,
+      "love": 50,
+      "shall": 49,
+      "face": 48,
+      "yet": 48,
+      "thing": 47,
+      "though": 46,
+      "indian": 46,
+      "know": 46,
+      "see": 45,
+      "wigwam": 45,
+      "said": 44,
+      "knew": 44,
+      "old": 44,
+      "saw": 43,
+      "soon": 43,
+      "burning": 42,
+      "raven": 42,
+      "around": 41,
+      "done": 40,
+      "away": 40,
+      "death": 39,
+      "chief": 39,
+      "still": 38,
+      "wife": 38,
+      "knife": 37,
+      "trail": 37,
+      "prisoner": 37,
+      "make": 36,
+      "came": 36,
+      "nothing": 35,
+      "heaven": 35,
+      "much": 35,
+      "hand": 34,
+      "made": 34,
+      "found": 34,
+      "replied": 33,
+      "give": 33,
+      "parsons": 32,
+      "far": 32,
+      "save": 32,
+      "take": 32,
+      "life": 32,
+      "torture": 32,
+      "ears": 31,
+      "asked": 31,
+      "go": 31,
+      "told": 30,
+      "fire": 30,
+      "may": 30,
+      "hands": 30,
+      "lover": 30,
+      "voice": 30,
+      "red": 29,
+      "yes": 29,
+      "without": 29,
+      "fer": 29,
+      "doctor": 29,
+      "indians": 29,
+      "ever": 29,
+      "renegade": 29,
+      "hai": 28,
+      "side": 28,
+      "ef": 27,
+      "heard": 27,
+      "way": 27,
+      "continued": 27,
+      "keep": 27,
+      "might": 26
+    },
+    "sentiment": {
+      "overall": {
+        "neg": 0.119,
+        "neu": 0.739,
+        "pos": 0.142,
+        "compound": 1.0
+      },
+      "average": {
+        "positive": 0.1035761709868122,
+        "negative": 0.07739654388358344,
+        "neutral": 0.8190272851296043,
+        "compound": 0.03816421100500227
+      },
+      "sentence_count": 2199
+    },
+    "style": {
+      "avg_sentence_length": 18.24,
+      "avg_word_length": 4.15,
+      "sentence_count": 2199,
+      "word_count": 32552,
+      "unique_words": 3888,
+      "type_token_ratio": 0.1194,
+      "lexical_diversity": 0.2023
+    },
+    "distinctive_words": [
+      {
+        "word": "upon",
+        "score": 0.3132
+      },
+      {
+        "word": "would",
+        "score": 0.2649
+      },
+      {
+        "word": "one",
+        "score": 0.2649
+      },
+      {
+        "word": "could",
+        "score": 0.2649
+      },
+      {
+        "word": "even",
+        "score": 0.2093
+      },
+      {
+        "word": "little",
+        "score": 0.1934
+      },
+      {
+        "word": "eyes",
+        "score": 0.1801
+      },
+      {
+        "word": "never",
+        "score": 0.1723
+      },
+      {
+        "word": "come",
+        "score": 0.1695
+      },
+      {
+        "word": "must",
+        "score": 0.1691
+      },
+      {
+        "word": "like",
+        "score": 0.1669
+      },
+      {
+        "word": "time",
+        "score": 0.1669
+      },
+      {
+        "word": "great",
+        "score": 0.1669
+      },
+      {
+        "word": "long",
+        "score": 0.166
+      },
+      {
+        "word": "back",
+        "score": 0.1597
+      },
+      {
+        "word": "love",
+        "score": 0.1566
+      },
+      {
+        "word": "man",
+        "score": 0.1537
+      },
+      {
+        "word": "shall",
+        "score": 0.1535
+      },
+      {
+        "word": "yet",
+        "score": 0.1503
+      },
+      {
+        "word": "face",
+        "score": 0.1503
+      }
+    ]
+  }
+]
