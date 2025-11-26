@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distant Reading Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/wordcloud@1.2.2/src/wordcloud2.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>📚 Distant Reading Analysis</h1>
+            <p class="subtitle">Computational Literary Analysis of Five 19th Century Texts</p>
+        </header>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Sidebar Navigation -->
+            <nav class="sidebar">
+                <h2>Texts</h2>
+                <div id="text-list" class="text-list">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+
+                <div class="comparison-section">
+                    <h3>Compare Texts</h3>
+                    <div id="comparison-checkboxes" class="comparison-checkboxes">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                    <button id="compare-btn" class="compare-btn" disabled>Compare Selected</button>
+                </div>
+            </nav>
+
+            <!-- Content Area -->
+            <main class="content">
+                <div id="single-view" class="single-view">
+                    <div id="text-details">
+                        <!-- Individual text analysis will be displayed here -->
+                        <div class="welcome-message">
+                            <h2>Welcome to Distant Reading Analysis</h2>
+                            <p>Select a text from the sidebar to begin exploring its linguistic patterns, sentiment, and stylistic features.</p>
+                            <div class="features">
+                                <div class="feature">
+                                    <h3>Word Frequency Analysis</h3>
+                                    <p>Interactive word clouds showing the most common words in each text</p>
+                                </div>
+                                <div class="feature">
+                                    <h3>Sentiment Analysis</h3>
+                                    <p>Emotional tone and polarity scores using VADER sentiment analysis</p>
+                                </div>
+                                <div class="feature">
+                                    <h3>Style Metrics</h3>
+                                    <p>Comparative statistics including sentence length, vocabulary richness, and lexical diversity</p>
+                                </div>
+                                <div class="feature">
+                                    <h3>Text Comparison</h3>
+                                    <p>Side-by-side analysis of multiple texts to identify similarities and differences</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="comparison-view" class="comparison-view hidden">
+                    <!-- Comparison view will be displayed here -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
