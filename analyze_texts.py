@@ -26,18 +26,51 @@ try:
 except LookupError:
     nltk.download('stopwords')
 
-try:
-    nltk.data.find('tokenizers/punkt_tab')
-except LookupError:
-    nltk.download('punkt_tab')
-
 
 class TextAnalyzer:
     """Analyzes literary texts for distant reading."""
 
     def __init__(self):
+        # Base stopwords
         self.stop_words = set(stopwords.words('english'))
+
+        # Extended stopwords for 19th-century literature
+        literary_stopwords = {
+            # Common narrative words
+            'said', 'upon', 'would', 'could', 'one', 'two', 'three',
+            'may', 'might', 'must', 'shall', 'will', 'though', 'yet',
+            'thus', 'indeed', 'therefore', 'however', 'moreover',
+            # Titles and honorifics
+            'mr', 'mrs', 'miss', 'sir', 'lord', 'lady', 'master',
+            # Common verbs that don't add meaning
+            'came', 'went', 'saw', 'looked', 'seemed', 'made', 'took',
+            'gave', 'found', 'knew', 'thought', 'felt', 'began',
+            # Time words
+            'day', 'time', 'moment', 'hour', 'night', 'morning',
+            # Pronouns and basic words
+            'little', 'great', 'old', 'new', 'long', 'good', 'first',
+            'last', 'much', 'many', 'own', 'ever', 'never', 'still',
+            'even', 'well', 'back', 'thing', 'things', 'way',
+            # Chapter markers
+            'chapter', 'volume', 'part', 'book', 'section'
+        }
+        self.stop_words.update(literary_stopwords)
+
         self.sentiment_analyzer = SentimentIntensityAnalyzer()
+
+        # Romantic vocabulary lexicon
+        self.romantic_lexicon = {
+            'love': ['love', 'loved', 'loving', 'lover', 'lovers', 'beloved', 'adore', 'adored', 'adoring', 'adoration'],
+            'yearning': ['yearning', 'yearn', 'yearned', 'longing', 'long', 'longed', 'desire', 'desired', 'desiring',
+                        'wish', 'wished', 'wishing', 'hope', 'hoped', 'hoping', 'pine', 'pined', 'pining'],
+            'affection': ['affection', 'affectionate', 'tender', 'tenderness', 'fond', 'fondness', 'devotion',
+                         'devoted', 'attachment', 'attached', 'passion', 'passionate'],
+            'pain': ['pain', 'painful', 'anguish', 'anguished', 'sorrow', 'sorrowful', 'grief', 'grieved',
+                    'melancholy', 'despair', 'despairing', 'heartbreak', 'heartbroken', 'torment', 'tormented',
+                    'suffering', 'suffer', 'suffered', 'misery', 'miserable', 'wretched', 'agony'],
+            'loss': ['loss', 'lost', 'forsaken', 'abandoned', 'rejection', 'rejected', 'unrequited',
+                    'separated', 'separation', 'parted', 'parting', 'farewell']
+        }
 
     def strip_gutenberg_headers(self, text):
         """Remove Project Gutenberg headers and footers."""
@@ -129,6 +162,85 @@ class TextAnalyzer:
             'lexical_diversity': round(lexical_diversity, 4)
         }
 
+    def analyze_romantic_vocabulary(self, words):
+        """Analyze romantic vocabulary usage in the text."""
+        # Flatten all romantic words into a single list
+        all_romantic_words = []
+        for category_words in self.romantic_lexicon.values():
+            all_romantic_words.extend(category_words)
+
+        # Count occurrences
+        word_counts = Counter(words)
+        romantic_usage = {}
+
+        for category, word_list in self.romantic_lexicon.items():
+            category_counts = {}
+            for word in word_list:
+                count = word_counts.get(word, 0)
+                if count > 0:
+                    category_counts[word] = count
+
+            romantic_usage[category] = {
+                'words': category_counts,
+                'total': sum(category_counts.values()),
+                'unique': len(category_counts)
+            }
+
+        # Calculate overall romantic vocabulary density
+        total_romantic = sum(cat['total'] for cat in romantic_usage.values())
+        total_words = len(words)
+        density = (total_romantic / total_words * 100) if total_words > 0 else 0
+
+        return {
+            'categories': romantic_usage,
+            'total_romantic_words': total_romantic,
+            'density_percentage': round(density, 3)
+        }
+
+    def analyze_emotional_arc(self, text):
+        """Analyze how sentiment changes throughout the text (beginning, middle, end)."""
+        sentences = sent_tokenize(text)
+        total_sentences = len(sentences)
+
+        if total_sentences < 3:
+            return None
+
+        # Divide into 5 segments for a more detailed arc
+        segment_size = total_sentences // 5
+        segments = []
+
+        for i in range(5):
+            start_idx = i * segment_size
+            if i == 4:  # Last segment gets any remaining sentences
+                end_idx = total_sentences
+            else:
+                end_idx = (i + 1) * segment_size
+
+            segment_sentences = sentences[start_idx:end_idx]
+            segment_text = ' '.join(segment_sentences)
+
+            # Analyze sentiment for this segment
+            segment_sentiments = [self.sentiment_analyzer.polarity_scores(sent) for sent in segment_sentences]
+
+            avg_sentiment = {
+                'positive': np.mean([s['pos'] for s in segment_sentiments]),
+                'negative': np.mean([s['neg'] for s in segment_sentiments]),
+                'neutral': np.mean([s['neu'] for s in segment_sentiments]),
+                'compound': np.mean([s['compound'] for s in segment_sentiments])
+            }
+
+            segments.append({
+                'segment': i + 1,
+                'label': ['Beginning', 'Early', 'Middle', 'Late', 'End'][i],
+                'sentiment': avg_sentiment,
+                'sentence_count': len(segment_sentences)
+            })
+
+        return {
+            'segments': segments,
+            'total_segments': 5
+        }
+
     def extract_metadata(self, text, filename):
         """Extract title and author from Project Gutenberg text."""
         lines = text.split('\n')[:100]  # Check first 100 lines
@@ -180,13 +292,21 @@ class TextAnalyzer:
         # Calculate style metrics
         style = self.calculate_style_metrics(clean_text, words)
 
+        # Analyze romantic vocabulary
+        romantic_vocab = self.analyze_romantic_vocabulary(words)
+
+        # Analyze emotional arc
+        emotional_arc = self.analyze_emotional_arc(clean_text)
+
         return {
             'filename': filepath.name,
             'title': title,
             'author': author,
             'word_frequencies': top_words,
             'sentiment': sentiment,
-            'style': style
+            'style': style,
+            'romantic_vocabulary': romantic_vocab,
+            'emotional_arc': emotional_arc
         }
 
     def calculate_tfidf(self, texts_data):

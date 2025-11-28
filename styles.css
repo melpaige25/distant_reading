@@ -423,6 +423,78 @@ body {
     max-height: 400px;
 }
 
+/* Romantic Vocabulary Sections */
+.romantic-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.romantic-category {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #e83e8c;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.category-title {
+    font-size: 1.1rem;
+    color: #495057;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.category-stats {
+    margin-bottom: 15px;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.stat-value {
+    font-weight: 700;
+    color: #667eea;
+    font-size: 1.3rem;
+}
+
+.stat-detail {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.85rem;
+}
+
+.romantic-words {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.romantic-word-badge {
+    background: linear-gradient(135deg, #e83e8c, #fc6c85);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: default;
+    transition: transform 0.2s ease;
+}
+
+.romantic-word-badge:hover {
+    transform: scale(1.05);
+}
+
+.word-count {
+    opacity: 0.8;
+    font-size: 0.75rem;
+    margin-left: 4px;
+}
+
+/* Emotional Arc Chart */
+#emotional-arc-chart {
+    min-height: 300px;
+}
+
 /* Hidden class */
 .hidden {
     display: none !important;
