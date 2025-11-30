@@ -5,33 +5,20 @@
     "author": "Johann Wolfgang von Goethe",
     "word_frequencies": {
       "charlotte": 180,
-      "one": 125,
-      "upon": 120,
       "heart": 107,
-      "would": 102,
-      "could": 97,
       "man": 89,
       "albert": 80,
       "werther": 78,
-      "said": 78,
-      "little": 74,
-      "shall": 70,
       "see": 70,
-      "time": 70,
       "like": 68,
       "know": 64,
-      "much": 63,
       "dear": 61,
       "love": 59,
       "friend": 59,
       "every": 56,
       "thy": 55,
       "soul": 53,
-      "may": 53,
       "us": 53,
-      "never": 53,
-      "must": 53,
-      "yet": 51,
       "often": 50,
       "children": 49,
       "world": 48,
@@ -44,45 +31,24 @@
       "tears": 43,
       "whole": 43,
       "around": 43,
-      "still": 42,
       "mind": 41,
-      "first": 41,
       "place": 41,
-      "last": 41,
       "wilhelm": 41,
       "without": 41,
       "find": 40,
-      "day": 39,
-      "felt": 39,
-      "made": 39,
-      "well": 38,
-      "thought": 38,
       "happiness": 38,
-      "good": 36,
-      "ever": 36,
-      "even": 36,
-      "might": 36,
-      "old": 36,
       "life": 36,
-      "went": 36,
       "say": 36,
-      "came": 36,
       "voice": 36,
-      "moment": 35,
       "till": 35,
       "heaven": 32,
-      "found": 32,
       "father": 32,
       "away": 32,
-      "many": 31,
       "make": 31,
-      "morning": 31,
       "alone": 30,
       "hear": 30,
-      "night": 30,
       "nature": 29,
       "oh": 29,
-      "great": 29,
       "toward": 29,
       "another": 29,
       "give": 28,
@@ -100,10 +66,44 @@
       "think": 26,
       "come": 26,
       "continued": 26,
-      "saw": 26,
       "servant": 26,
       "leave": 25,
-      "mother": 25
+      "mother": 25,
+      "wish": 25,
+      "room": 25,
+      "present": 24,
+      "friends": 24,
+      "become": 24,
+      "feeling": 24,
+      "left": 24,
+      "others": 24,
+      "near": 24,
+      "thee": 24,
+      "go": 23,
+      "exclaimed": 23,
+      "poor": 22,
+      "let": 22,
+      "whilst": 22,
+      "existence": 22,
+      "trees": 22,
+      "hill": 22,
+      "since": 22,
+      "death": 22,
+      "son": 22,
+      "young": 21,
+      "thousand": 21,
+      "people": 21,
+      "country": 21,
+      "wife": 21,
+      "better": 21,
+      "returned": 21,
+      "times": 21,
+      "gone": 20,
+      "mine": 20,
+      "soon": 20,
+      "within": 20,
+      "sun": 20,
+      "presence": 20
     },
     "sentiment": {
       "overall": {
@@ -129,86 +129,218 @@
       "type_token_ratio": 0.12,
       "lexical_diversity": 0.2226
     },
+    "romantic_vocabulary": {
+      "categories": {
+        "love": {
+          "words": {
+            "love": 59,
+            "loved": 8,
+            "loving": 1,
+            "lover": 6,
+            "beloved": 8,
+            "adored": 2
+          },
+          "total": 84,
+          "unique": 6
+        },
+        "yearning": {
+          "words": {
+            "longing": 2,
+            "long": 25,
+            "longed": 1,
+            "desire": 11,
+            "desired": 9,
+            "wish": 25,
+            "wished": 13,
+            "wishing": 1,
+            "hope": 12,
+            "hoped": 2,
+            "hoping": 1
+          },
+          "total": 102,
+          "unique": 11
+        },
+        "affection": {
+          "words": {
+            "affection": 7,
+            "affectionate": 1,
+            "tender": 6,
+            "tenderness": 8,
+            "fond": 4,
+            "fondness": 1,
+            "devotion": 4,
+            "devoted": 3,
+            "attachment": 7,
+            "attached": 5,
+            "passion": 15,
+            "passionate": 2
+          },
+          "total": 63,
+          "unique": 12
+        },
+        "pain": {
+          "words": {
+            "pain": 7,
+            "painful": 10,
+            "anguish": 3,
+            "anguished": 1,
+            "sorrow": 12,
+            "sorrowful": 4,
+            "grief": 10,
+            "grieved": 1,
+            "melancholy": 13,
+            "despair": 6,
+            "despairing": 1,
+            "heartbroken": 1,
+            "torment": 6,
+            "tormented": 2,
+            "suffering": 3,
+            "suffer": 12,
+            "suffered": 2,
+            "misery": 7,
+            "miserable": 3,
+            "wretched": 16,
+            "agony": 2
+          },
+          "total": 122,
+          "unique": 21
+        },
+        "loss": {
+          "words": {
+            "loss": 4,
+            "lost": 17,
+            "forsaken": 3,
+            "abandoned": 1,
+            "rejected": 1,
+            "separation": 2,
+            "parted": 4,
+            "farewell": 14
+          },
+          "total": 46,
+          "unique": 8
+        }
+      },
+      "total_romantic_words": 417,
+      "density_percentage": 0.989
+    },
+    "emotional_arc": {
+      "segments": [
+        {
+          "segment": 1,
+          "label": "Beginning",
+          "sentiment": {
+            "positive": 0.13611720698254365,
+            "negative": 0.0706857855361596,
+            "neutral": 0.7932132169576059,
+            "compound": 0.18492082294264342
+          },
+          "sentence_count": 802
+        },
+        {
+          "segment": 2,
+          "label": "Middle",
+          "sentiment": {
+            "positive": 0.12788902743142144,
+            "negative": 0.07316957605985037,
+            "neutral": 0.7989513715710723,
+            "compound": 0.14223179551122195
+          },
+          "sentence_count": 802
+        },
+        {
+          "segment": 3,
+          "label": "End",
+          "sentiment": {
+            "positive": 0.11076089663760896,
+            "negative": 0.1016849315068493,
+            "neutral": 0.7875516811955168,
+            "compound": 0.032724283935242834
+          },
+          "sentence_count": 803
+        }
+      ],
+      "total_segments": 3
+    },
     "distinctive_words": [
       {
-        "word": "upon",
-        "score": 0.2969
+        "word": "heart",
+        "score": 0.3843
       },
       {
-        "word": "would",
-        "score": 0.2511
+        "word": "dear",
+        "score": 0.3357
       },
       {
-        "word": "one",
-        "score": 0.2511
-      },
-      {
-        "word": "could",
-        "score": 0.2435
+        "word": "us",
+        "score": 0.2917
       },
       {
         "word": "man",
-        "score": 0.2235
-      },
-      {
-        "word": "shall",
-        "score": 0.2078
-      },
-      {
-        "word": "said",
-        "score": 0.1958
-      },
-      {
-        "word": "much",
-        "score": 0.187
-      },
-      {
-        "word": "little",
-        "score": 0.1858
+        "score": 0.2893
       },
       {
         "word": "see",
-        "score": 0.1758
-      },
-      {
-        "word": "time",
-        "score": 0.1758
-      },
-      {
-        "word": "love",
-        "score": 0.1751
+        "score": 0.2275
       },
       {
         "word": "like",
-        "score": 0.1707
+        "score": 0.221
       },
       {
         "word": "know",
-        "score": 0.1607
+        "score": 0.208
       },
       {
-        "word": "must",
-        "score": 0.1573
+        "word": "around",
+        "score": 0.1964
       },
       {
-        "word": "may",
-        "score": 0.1573
+        "word": "love",
+        "score": 0.1918
       },
       {
-        "word": "never",
-        "score": 0.1573
+        "word": "every",
+        "score": 0.182
       },
       {
-        "word": "yet",
-        "score": 0.1514
+        "word": "mind",
+        "score": 0.1576
       },
       {
-        "word": "first",
-        "score": 0.1447
+        "word": "eyes",
+        "score": 0.1528
       },
       {
-        "word": "last",
-        "score": 0.1447
+        "word": "nothing",
+        "score": 0.1463
+      },
+      {
+        "word": "hand",
+        "score": 0.143
+      },
+      {
+        "word": "say",
+        "score": 0.1383
+      },
+      {
+        "word": "life",
+        "score": 0.1383
+      },
+      {
+        "word": "place",
+        "score": 0.1333
+      },
+      {
+        "word": "without",
+        "score": 0.1333
+      },
+      {
+        "word": "house",
+        "score": 0.1233
+      },
+      {
+        "word": "make",
+        "score": 0.1191
       }
     ]
   },
@@ -219,46 +351,24 @@
     "word_frequencies": {
       "frederick": 569,
       "arnoux": 390,
-      "would": 318,
-      "one": 274,
-      "said": 272,
       "madame": 202,
-      "made": 183,
       "man": 180,
-      "little": 177,
-      "could": 175,
-      "two": 172,
-      "time": 166,
       "like": 164,
       "deslauriers": 139,
-      "back": 123,
-      "went": 118,
       "order": 118,
-      "way": 112,
       "young": 106,
       "without": 99,
       "go": 99,
       "make": 97,
       "come": 96,
-      "came": 95,
       "towards": 93,
       "see": 89,
-      "long": 87,
-      "three": 87,
-      "took": 85,
       "eyes": 84,
-      "might": 83,
-      "well": 83,
-      "great": 80,
-      "good": 80,
       "every": 80,
       "house": 80,
       "nothing": 80,
-      "day": 80,
       "hussonnet": 80,
       "know": 78,
-      "old": 78,
-      "began": 77,
       "away": 77,
       "side": 76,
       "face": 75,
@@ -267,36 +377,25 @@
       "going": 73,
       "de": 72,
       "head": 72,
-      "even": 72,
       "kept": 71,
-      "first": 71,
       "dambreuse": 71,
       "front": 70,
-      "much": 70,
       "left": 70,
-      "last": 69,
-      "gave": 69,
       "look": 69,
-      "felt": 69,
       "people": 68,
       "got": 68,
       "ah": 68,
       "door": 67,
       "rosanette": 67,
-      "seemed": 66,
       "get": 66,
       "evening": 65,
       "mind": 65,
       "place": 63,
-      "found": 63,
       "woman": 61,
       "hand": 61,
-      "however": 61,
       "asked": 61,
       "round": 60,
-      "things": 59,
       "air": 58,
-      "thought": 58,
       "friend": 57,
       "end": 56,
       "pellerin": 56,
@@ -316,7 +415,40 @@
       "women": 50,
       "right": 49,
       "replied": 49,
-      "give": 49
+      "give": 49,
+      "longer": 49,
+      "around": 48,
+      "sort": 48,
+      "wife": 48,
+      "next": 47,
+      "called": 47,
+      "name": 47,
+      "soon": 47,
+      "fashion": 47,
+      "white": 46,
+      "black": 46,
+      "mademoiselle": 46,
+      "big": 46,
+      "passed": 46,
+      "others": 46,
+      "find": 46,
+      "say": 46,
+      "oh": 46,
+      "maréchale": 46,
+      "making": 45,
+      "quite": 45,
+      "put": 45,
+      "alone": 45,
+      "hands": 44,
+      "seated": 44,
+      "yes": 44,
+      "tone": 43,
+      "certain": 43,
+      "better": 43,
+      "francs": 43,
+      "matter": 43,
+      "voice": 42,
+      "regimbart": 42
     },
     "sentiment": {
       "overall": {
@@ -342,86 +474,218 @@
       "type_token_ratio": 0.1029,
       "lexical_diversity": 0.2647
     },
+    "romantic_vocabulary": {
+      "categories": {
+        "love": {
+          "words": {
+            "love": 51,
+            "loved": 11,
+            "loving": 1,
+            "lover": 8,
+            "lovers": 1,
+            "beloved": 1,
+            "adore": 1
+          },
+          "total": 74,
+          "unique": 7
+        },
+        "yearning": {
+          "words": {
+            "yearning": 3,
+            "yearn": 2,
+            "yearned": 2,
+            "longing": 11,
+            "long": 87,
+            "longed": 7,
+            "desire": 19,
+            "desired": 5,
+            "desiring": 1,
+            "wish": 9,
+            "wished": 22,
+            "wishing": 3,
+            "hope": 16,
+            "hoped": 1,
+            "hoping": 1
+          },
+          "total": 189,
+          "unique": 15
+        },
+        "affection": {
+          "words": {
+            "affection": 12,
+            "affectionate": 1,
+            "tender": 6,
+            "tenderness": 8,
+            "fond": 7,
+            "devotion": 2,
+            "devoted": 7,
+            "attachment": 4,
+            "attached": 12,
+            "passion": 18,
+            "passionate": 2
+          },
+          "total": 79,
+          "unique": 11
+        },
+        "pain": {
+          "words": {
+            "pain": 4,
+            "painful": 8,
+            "anguish": 1,
+            "sorrow": 1,
+            "grief": 4,
+            "grieved": 1,
+            "melancholy": 11,
+            "despair": 7,
+            "tormented": 3,
+            "suffering": 3,
+            "suffer": 2,
+            "suffered": 1,
+            "misery": 2,
+            "miserable": 1,
+            "wretched": 6
+          },
+          "total": 55,
+          "unique": 15
+        },
+        "loss": {
+          "words": {
+            "loss": 11,
+            "lost": 29,
+            "forsaken": 1,
+            "abandoned": 6,
+            "rejected": 3,
+            "separated": 6,
+            "separation": 3,
+            "parted": 7,
+            "parting": 5,
+            "farewell": 1
+          },
+          "total": 72,
+          "unique": 10
+        }
+      },
+      "total_romantic_words": 469,
+      "density_percentage": 0.55
+    },
+    "emotional_arc": {
+      "segments": [
+        {
+          "segment": 1,
+          "label": "Beginning",
+          "sentiment": {
+            "positive": 0.09054148471615721,
+            "negative": 0.05054694323144105,
+            "neutral": 0.8589170305676856,
+            "compound": 0.08243498908296942
+          },
+          "sentence_count": 1832
+        },
+        {
+          "segment": 2,
+          "label": "Middle",
+          "sentiment": {
+            "positive": 0.09085753275109172,
+            "negative": 0.05058133187772925,
+            "neutral": 0.858556768558952,
+            "compound": 0.08836457423580786
+          },
+          "sentence_count": 1832
+        },
+        {
+          "segment": 3,
+          "label": "End",
+          "sentiment": {
+            "positive": 0.09279093886462882,
+            "negative": 0.05566484716157206,
+            "neutral": 0.8515376637554585,
+            "compound": 0.06785431222707423
+          },
+          "sentence_count": 1832
+        }
+      ],
+      "total_segments": 3
+    },
     "distinctive_words": [
       {
-        "word": "young",
-        "score": 0.2213
+        "word": "madame",
+        "score": 0.3086
       },
       {
-        "word": "two",
-        "score": 0.2213
-      },
-      {
-        "word": "way",
-        "score": 0.1862
-      },
-      {
-        "word": "went",
-        "score": 0.1862
-      },
-      {
-        "word": "back",
-        "score": 0.1862
-      },
-      {
-        "word": "without",
-        "score": 0.1843
-      },
-      {
-        "word": "go",
-        "score": 0.1843
+        "word": "ah",
+        "score": 0.2098
       },
       {
         "word": "make",
-        "score": 0.1806
+        "score": 0.209
       },
       {
-        "word": "good",
-        "score": 0.177
-      },
-      {
-        "word": "long",
-        "score": 0.162
+        "word": "house",
+        "score": 0.2049
       },
       {
         "word": "head",
-        "score": 0.1593
-      },
-      {
-        "word": "made",
-        "score": 0.1575
+        "score": 0.1844
       },
       {
         "word": "man",
-        "score": 0.1575
+        "score": 0.1822
       },
       {
-        "word": "time",
-        "score": 0.1575
-      },
-      {
-        "word": "said",
-        "score": 0.1575
-      },
-      {
-        "word": "would",
-        "score": 0.1575
-      },
-      {
-        "word": "one",
-        "score": 0.1575
-      },
-      {
-        "word": "could",
-        "score": 0.1575
+        "word": "young",
+        "score": 0.1822
       },
       {
         "word": "like",
-        "score": 0.1575
+        "score": 0.1822
       },
       {
-        "word": "little",
-        "score": 0.1575
+        "word": "go",
+        "score": 0.1804
+      },
+      {
+        "word": "without",
+        "score": 0.1804
+      },
+      {
+        "word": "come",
+        "score": 0.175
+      },
+      {
+        "word": "side",
+        "score": 0.1638
+      },
+      {
+        "word": "see",
+        "score": 0.1622
+      },
+      {
+        "word": "face",
+        "score": 0.1616
+      },
+      {
+        "word": "take",
+        "score": 0.1595
+      },
+      {
+        "word": "woman",
+        "score": 0.1562
+      },
+      {
+        "word": "eyes",
+        "score": 0.1531
+      },
+      {
+        "word": "right",
+        "score": 0.1512
+      },
+      {
+        "word": "left",
+        "score": 0.1508
+      },
+      {
+        "word": "look",
+        "score": 0.1487
       }
     ]
   },
@@ -431,74 +695,47 @@
     "author": "Elizabeth Oakes Prince Smith",
     "word_frequencies": {
       "hope": 249,
-      "upon": 248,
       "bonyton": 172,
       "john": 170,
-      "one": 134,
-      "would": 98,
       "acashee": 93,
       "vines": 91,
       "like": 88,
       "eyes": 86,
-      "said": 86,
-      "little": 85,
       "head": 73,
-      "long": 72,
       "hand": 68,
-      "could": 66,
-      "never": 65,
       "go": 64,
       "man": 61,
-      "well": 60,
       "mistress": 60,
       "sagamore": 56,
       "away": 56,
       "indian": 55,
-      "time": 54,
       "face": 53,
       "people": 53,
-      "old": 53,
-      "sir": 51,
       "look": 51,
       "see": 50,
-      "might": 50,
-      "even": 50,
-      "day": 50,
-      "way": 49,
       "hair": 47,
       "white": 47,
       "woman": 47,
       "know": 46,
-      "great": 46,
       "women": 46,
       "richard": 45,
       "stood": 45,
-      "made": 45,
       "heart": 45,
       "till": 44,
       "length": 44,
-      "two": 42,
-      "saw": 42,
-      "shall": 41,
       "water": 41,
       "falls": 41,
       "come": 41,
       "feet": 41,
       "wild": 40,
-      "back": 40,
       "indians": 40,
-      "still": 40,
       "turned": 39,
-      "looked": 39,
       "young": 39,
       "youth": 39,
       "seen": 39,
-      "went": 39,
-      "must": 38,
       "nothing": 38,
       "child": 38,
       "saco": 37,
-      "found": 37,
       "forest": 36,
       "arms": 36,
       "years": 36,
@@ -507,29 +744,56 @@
       "voice": 35,
       "say": 35,
       "rock": 35,
-      "thus": 35,
       "chief": 35,
       "tribe": 35,
       "girl": 34,
       "life": 34,
       "father": 34,
       "men": 34,
-      "many": 34,
       "every": 34,
       "mother": 34,
-      "came": 33,
-      "yet": 33,
-      "knew": 32,
       "words": 32,
       "hands": 32,
       "eye": 32,
       "lost": 32,
-      "may": 31,
       "tell": 31,
       "left": 31,
       "mind": 30,
       "light": 30,
-      "daughter": 29
+      "daughter": 29,
+      "love": 28,
+      "dark": 28,
+      "thee": 28,
+      "whose": 28,
+      "silent": 28,
+      "place": 27,
+      "woods": 27,
+      "foot": 26,
+      "without": 26,
+      "heard": 25,
+      "beautiful": 25,
+      "river": 25,
+      "beauty": 25,
+      "village": 25,
+      "cried": 24,
+      "passed": 24,
+      "work": 24,
+      "waters": 24,
+      "small": 24,
+      "side": 24,
+      "custa": 24,
+      "colony": 23,
+      "son": 23,
+      "started": 23,
+      "replied": 23,
+      "thy": 23,
+      "family": 23,
+      "became": 23,
+      "high": 23,
+      "spirit": 23,
+      "deep": 23,
+      "black": 22,
+      "england": 22
     },
     "sentiment": {
       "overall": {
@@ -555,86 +819,206 @@
       "type_token_ratio": 0.136,
       "lexical_diversity": 0.243
     },
+    "romantic_vocabulary": {
+      "categories": {
+        "love": {
+          "words": {
+            "love": 28,
+            "loved": 6,
+            "loving": 2,
+            "lover": 6,
+            "lovers": 2,
+            "beloved": 1
+          },
+          "total": 45,
+          "unique": 6
+        },
+        "yearning": {
+          "words": {
+            "yearning": 2,
+            "longing": 1,
+            "long": 72,
+            "desire": 5,
+            "desired": 2,
+            "wish": 7,
+            "wished": 4,
+            "wishing": 1,
+            "hope": 249,
+            "hoped": 4,
+            "pine": 3
+          },
+          "total": 350,
+          "unique": 11
+        },
+        "affection": {
+          "words": {
+            "affection": 2,
+            "affectionate": 3,
+            "tender": 13,
+            "tenderness": 9,
+            "fond": 5,
+            "devotion": 4,
+            "devoted": 4,
+            "attached": 1,
+            "passion": 4,
+            "passionate": 3
+          },
+          "total": 48,
+          "unique": 10
+        },
+        "pain": {
+          "words": {
+            "pain": 1,
+            "painful": 1,
+            "sorrow": 4,
+            "sorrowful": 5,
+            "grief": 5,
+            "melancholy": 5,
+            "suffering": 1,
+            "suffer": 1,
+            "suffered": 1,
+            "misery": 4,
+            "miserable": 2,
+            "wretched": 2,
+            "agony": 3
+          },
+          "total": 35,
+          "unique": 13
+        },
+        "loss": {
+          "words": {
+            "loss": 2,
+            "lost": 32,
+            "abandoned": 4,
+            "separated": 6,
+            "parted": 5,
+            "farewell": 2
+          },
+          "total": 51,
+          "unique": 6
+        }
+      },
+      "total_romantic_words": 529,
+      "density_percentage": 1.161
+    },
+    "emotional_arc": {
+      "segments": [
+        {
+          "segment": 1,
+          "label": "Beginning",
+          "sentiment": {
+            "positive": 0.11929261363636363,
+            "negative": 0.07349289772727273,
+            "neutral": 0.8072230113636363,
+            "compound": 0.1714143465909091
+          },
+          "sentence_count": 704
+        },
+        {
+          "segment": 2,
+          "label": "Middle",
+          "sentiment": {
+            "positive": 0.09584374999999999,
+            "negative": 0.07291051136363637,
+            "neutral": 0.8312443181818182,
+            "compound": 0.08426079545454546
+          },
+          "sentence_count": 704
+        },
+        {
+          "segment": 3,
+          "label": "End",
+          "sentiment": {
+            "positive": 0.05825710227272727,
+            "negative": 0.036620738636363635,
+            "neutral": 0.9051235795454547,
+            "compound": 0.05137088068181817
+          },
+          "sentence_count": 704
+        }
+      ],
+      "total_segments": 3
+    },
     "distinctive_words": [
       {
-        "word": "upon",
-        "score": 0.2891
-      },
-      {
         "word": "head",
-        "score": 0.2509
-      },
-      {
-        "word": "one",
-        "score": 0.2445
-      },
-      {
-        "word": "would",
-        "score": 0.2396
+        "score": 0.3283
       },
       {
         "word": "like",
-        "score": 0.2152
-      },
-      {
-        "word": "said",
-        "score": 0.2103
+        "score": 0.2816
       },
       {
         "word": "eyes",
-        "score": 0.2103
+        "score": 0.2752
       },
       {
-        "word": "long",
-        "score": 0.2081
-      },
-      {
-        "word": "little",
-        "score": 0.2078
-      },
-      {
-        "word": "never",
-        "score": 0.1879
-      },
-      {
-        "word": "go",
-        "score": 0.185
+        "word": "stood",
+        "score": 0.2438
       },
       {
         "word": "hand",
-        "score": 0.1663
+        "score": 0.2176
       },
       {
-        "word": "could",
-        "score": 0.1614
+        "word": "woman",
+        "score": 0.2114
+      },
+      {
+        "word": "white",
+        "score": 0.2114
+      },
+      {
+        "word": "go",
+        "score": 0.2048
+      },
+      {
+        "word": "people",
+        "score": 0.2005
       },
       {
         "word": "face",
-        "score": 0.1532
+        "score": 0.2005
       },
       {
         "word": "man",
-        "score": 0.1491
+        "score": 0.1952
       },
       {
-        "word": "well",
-        "score": 0.1467
-      },
-      {
-        "word": "two",
-        "score": 0.1443
-      },
-      {
-        "word": "way",
-        "score": 0.1417
+        "word": "look",
+        "score": 0.1929
       },
       {
         "word": "away",
-        "score": 0.1369
+        "score": 0.1792
       },
       {
-        "word": "young",
-        "score": 0.134
+        "word": "turned",
+        "score": 0.1754
+      },
+      {
+        "word": "heart",
+        "score": 0.1702
+      },
+      {
+        "word": "see",
+        "score": 0.16
+      },
+      {
+        "word": "know",
+        "score": 0.1472
+      },
+      {
+        "word": "tell",
+        "score": 0.1394
+      },
+      {
+        "word": "say",
+        "score": 0.1324
+      },
+      {
+        "word": "come",
+        "score": 0.1312
       }
     ]
   },
@@ -644,37 +1028,17 @@
     "author": "Lucas Malet",
     "word_frequencies": {
       "adrian": 487,
-      "upon": 430,
-      "one": 356,
-      "would": 335,
-      "said": 302,
       "joanna": 300,
-      "little": 297,
       "challoner": 275,
       "man": 272,
-      "could": 253,
       "margaret": 224,
       "young": 212,
-      "much": 207,
-      "still": 199,
       "quite": 198,
-      "back": 187,
-      "though": 185,
-      "must": 181,
-      "yet": 176,
       "know": 173,
-      "even": 166,
       "yes": 161,
-      "might": 160,
-      "may": 159,
-      "time": 156,
       "since": 153,
       "madame": 151,
-      "well": 150,
       "leger": 146,
-      "good": 145,
-      "came": 144,
-      "never": 143,
       "smyrthwaite": 141,
       "dear": 141,
       "rather": 140,
@@ -686,35 +1050,23 @@
       "savage": 134,
       "go": 134,
       "face": 132,
-      "felt": 131,
       "away": 131,
       "come": 127,
-      "last": 126,
       "think": 123,
       "make": 122,
-      "thought": 121,
       "hands": 118,
-      "long": 117,
-      "made": 116,
       "head": 116,
       "hand": 115,
       "mind": 113,
       "gabrielle": 112,
       "rené": 112,
-      "great": 110,
-      "first": 110,
       "life": 107,
       "really": 106,
-      "went": 105,
       "put": 105,
-      "two": 104,
       "far": 104,
       "house": 99,
       "take": 99,
-      "things": 99,
-      "looked": 98,
       "let": 98,
-      "miss": 98,
       "say": 98,
       "love": 95,
       "stood": 95,
@@ -727,22 +1079,54 @@
       "almost": 89,
       "beauchamp": 88,
       "without": 88,
-      "ever": 87,
       "anastasia": 87,
-      "shall": 87,
       "every": 86,
-      "old": 85,
       "whole": 85,
       "always": 84,
       "toward": 84,
-      "found": 83,
       "papa": 81,
       "black": 80,
       "nothing": 80,
-      "indeed": 80,
       "ah": 80,
-      "way": 78,
-      "turned": 77
+      "turned": 77,
+      "feel": 76,
+      "looking": 75,
+      "want": 75,
+      "also": 73,
+      "making": 73,
+      "heart": 72,
+      "certain": 72,
+      "told": 72,
+      "open": 71,
+      "believe": 71,
+      "along": 70,
+      "course": 69,
+      "set": 69,
+      "give": 69,
+      "manner": 68,
+      "paris": 68,
+      "present": 68,
+      "side": 67,
+      "look": 67,
+      "human": 66,
+      "speak": 66,
+      "better": 66,
+      "bibby": 66,
+      "something": 65,
+      "alone": 64,
+      "nature": 63,
+      "sense": 63,
+      "whether": 63,
+      "place": 63,
+      "across": 63,
+      "people": 63,
+      "colonel": 63,
+      "light": 62,
+      "voice": 62,
+      "business": 62,
+      "small": 61,
+      "fact": 61,
+      "remained": 61
     },
     "sentiment": {
       "overall": {
@@ -768,86 +1152,218 @@
       "type_token_ratio": 0.0866,
       "lexical_diversity": 0.2816
     },
+    "romantic_vocabulary": {
+      "categories": {
+        "love": {
+          "words": {
+            "love": 95,
+            "loved": 22,
+            "loving": 2,
+            "lover": 23,
+            "lovers": 1,
+            "beloved": 12,
+            "adore": 2,
+            "adored": 1
+          },
+          "total": 158,
+          "unique": 8
+        },
+        "yearning": {
+          "words": {
+            "yearning": 5,
+            "longing": 1,
+            "long": 117,
+            "longed": 1,
+            "desire": 24,
+            "desired": 8,
+            "wish": 43,
+            "wished": 25,
+            "wishing": 2,
+            "hope": 40,
+            "hoped": 5,
+            "hoping": 4,
+            "pine": 5
+          },
+          "total": 280,
+          "unique": 13
+        },
+        "affection": {
+          "words": {
+            "affection": 27,
+            "affectionate": 4,
+            "tender": 6,
+            "tenderness": 9,
+            "fond": 12,
+            "fondness": 1,
+            "devotion": 10,
+            "devoted": 10,
+            "attachment": 5,
+            "attached": 6,
+            "passion": 17,
+            "passionate": 4
+          },
+          "total": 111,
+          "unique": 12
+        },
+        "pain": {
+          "words": {
+            "pain": 23,
+            "painful": 23,
+            "anguish": 4,
+            "sorrow": 6,
+            "sorrowful": 2,
+            "grief": 5,
+            "grieved": 4,
+            "melancholy": 9,
+            "despair": 8,
+            "torment": 5,
+            "tormented": 3,
+            "suffering": 21,
+            "suffer": 12,
+            "suffered": 21,
+            "misery": 10,
+            "miserable": 6,
+            "wretched": 12,
+            "agony": 5
+          },
+          "total": 179,
+          "unique": 18
+        },
+        "loss": {
+          "words": {
+            "loss": 6,
+            "lost": 31,
+            "rejection": 1,
+            "separation": 1,
+            "parted": 10,
+            "parting": 9,
+            "farewell": 9
+          },
+          "total": 67,
+          "unique": 7
+        }
+      },
+      "total_romantic_words": 795,
+      "density_percentage": 0.571
+    },
+    "emotional_arc": {
+      "segments": [
+        {
+          "segment": 1,
+          "label": "Beginning",
+          "sentiment": {
+            "positive": 0.1114885337039611,
+            "negative": 0.09063516330785266,
+            "neutral": 0.7978749131341208,
+            "compound": 0.0599225851285615
+          },
+          "sentence_count": 2878
+        },
+        {
+          "segment": 2,
+          "label": "Middle",
+          "sentiment": {
+            "positive": 0.11088082001389854,
+            "negative": 0.08376789437109104,
+            "neutral": 0.8053492008339125,
+            "compound": 0.07790121612230716
+          },
+          "sentence_count": 2878
+        },
+        {
+          "segment": 3,
+          "label": "End",
+          "sentiment": {
+            "positive": 0.11036657400972898,
+            "negative": 0.09088568450312717,
+            "neutral": 0.7987505211952746,
+            "compound": 0.05301945795691451
+          },
+          "sentence_count": 2878
+        }
+      ],
+      "total_segments": 3
+    },
     "distinctive_words": [
       {
-        "word": "young",
-        "score": 0.1788
+        "word": "quite",
+        "score": 0.2097
       },
       {
-        "word": "two",
-        "score": 0.1788
+        "word": "put",
+        "score": 0.2097
       },
       {
-        "word": "good",
-        "score": 0.1788
+        "word": "dear",
+        "score": 0.2097
       },
       {
-        "word": "first",
-        "score": 0.1788
+        "word": "madame",
+        "score": 0.2097
+      },
+      {
+        "word": "stood",
+        "score": 0.1992
+      },
+      {
+        "word": "right",
+        "score": 0.1971
+      },
+      {
+        "word": "us",
+        "score": 0.1908
+      },
+      {
+        "word": "woman",
+        "score": 0.1741
+      },
+      {
+        "word": "think",
+        "score": 0.1741
+      },
+      {
+        "word": "yes",
+        "score": 0.1741
       },
       {
         "word": "head",
-        "score": 0.1788
+        "score": 0.1741
       },
       {
-        "word": "felt",
-        "score": 0.1788
+        "word": "house",
+        "score": 0.1723
       },
       {
-        "word": "last",
-        "score": 0.1788
+        "word": "ah",
+        "score": 0.1677
       },
       {
-        "word": "yet",
-        "score": 0.1504
-      },
-      {
-        "word": "upon",
-        "score": 0.1504
-      },
-      {
-        "word": "went",
-        "score": 0.1504
-      },
-      {
-        "word": "must",
-        "score": 0.1504
-      },
-      {
-        "word": "never",
-        "score": 0.1504
-      },
-      {
-        "word": "may",
-        "score": 0.1504
-      },
-      {
-        "word": "still",
-        "score": 0.1504
-      },
-      {
-        "word": "face",
-        "score": 0.1504
-      },
-      {
-        "word": "back",
-        "score": 0.1504
-      },
-      {
-        "word": "make",
-        "score": 0.1504
-      },
-      {
-        "word": "long",
-        "score": 0.1504
-      },
-      {
-        "word": "go",
-        "score": 0.1504
+        "word": "tell",
+        "score": 0.1636
       },
       {
         "word": "mind",
-        "score": 0.1504
+        "score": 0.1464
+      },
+      {
+        "word": "make",
+        "score": 0.1464
+      },
+      {
+        "word": "life",
+        "score": 0.1464
+      },
+      {
+        "word": "hands",
+        "score": 0.1464
+      },
+      {
+        "word": "face",
+        "score": 0.1464
+      },
+      {
+        "word": "take",
+        "score": 0.145
       }
     ]
   },
@@ -856,52 +1372,31 @@
     "title": "The red wizard, or, the cave captive",
     "author": "Edward Sylvester Ellis",
     "word_frequencies": {
-      "would": 199,
-      "one": 130,
-      "upon": 128,
-      "could": 125,
       "ther": 101,
       "yer": 89,
-      "even": 79,
       "er": 76,
       "scout": 75,
-      "little": 73,
       "eyes": 68,
       "come": 64,
       "ter": 64,
       "girl": 64,
-      "time": 63,
-      "great": 63,
       "like": 63,
       "tell": 59,
       "man": 58,
       "olive": 58,
       "medicine": 58,
       "white": 58,
-      "well": 56,
-      "never": 55,
-      "must": 54,
       "squaw": 53,
       "let": 53,
-      "long": 53,
       "heart": 52,
-      "back": 51,
       "every": 51,
       "cloud": 51,
       "love": 50,
-      "shall": 49,
       "face": 48,
-      "yet": 48,
-      "thing": 47,
-      "though": 46,
       "indian": 46,
       "know": 46,
       "see": 45,
       "wigwam": 45,
-      "said": 44,
-      "knew": 44,
-      "old": 44,
-      "saw": 43,
       "soon": 43,
       "burning": 42,
       "raven": 42,
@@ -910,19 +1405,14 @@
       "away": 40,
       "death": 39,
       "chief": 39,
-      "still": 38,
       "wife": 38,
       "knife": 37,
       "trail": 37,
       "prisoner": 37,
       "make": 36,
-      "came": 36,
       "nothing": 35,
       "heaven": 35,
-      "much": 35,
       "hand": 34,
-      "made": 34,
-      "found": 34,
       "replied": 33,
       "give": 33,
       "parsons": 32,
@@ -936,7 +1426,6 @@
       "go": 31,
       "told": 30,
       "fire": 30,
-      "may": 30,
       "hands": 30,
       "lover": 30,
       "voice": 30,
@@ -946,16 +1435,43 @@
       "fer": 29,
       "doctor": 29,
       "indians": 29,
-      "ever": 29,
       "renegade": 29,
       "hai": 28,
       "side": 28,
       "ef": 27,
       "heard": 27,
-      "way": 27,
       "continued": 27,
       "keep": 27,
-      "might": 26
+      "lips": 26,
+      "young": 25,
+      "words": 25,
+      "physician": 25,
+      "become": 24,
+      "oh": 24,
+      "manitou": 24,
+      "sioux": 23,
+      "name": 23,
+      "dead": 23,
+      "along": 23,
+      "warriors": 23,
+      "turned": 22,
+      "almost": 22,
+      "drew": 21,
+      "thar": 21,
+      "tribe": 21,
+      "returned": 21,
+      "near": 21,
+      "place": 21,
+      "think": 21,
+      "rest": 21,
+      "kin": 20,
+      "alone": 20,
+      "another": 20,
+      "became": 20,
+      "seen": 20,
+      "within": 20,
+      "black": 19,
+      "blood": 19
     },
     "sentiment": {
       "overall": {
@@ -981,86 +1497,203 @@
       "type_token_ratio": 0.1194,
       "lexical_diversity": 0.2023
     },
+    "romantic_vocabulary": {
+      "categories": {
+        "love": {
+          "words": {
+            "love": 50,
+            "loved": 8,
+            "loving": 3,
+            "lover": 30,
+            "lovers": 3,
+            "adored": 1
+          },
+          "total": 95,
+          "unique": 6
+        },
+        "yearning": {
+          "words": {
+            "longing": 1,
+            "long": 53,
+            "longed": 3,
+            "desire": 1,
+            "desired": 5,
+            "wish": 11,
+            "wished": 2,
+            "hope": 7,
+            "hoped": 1,
+            "hoping": 1
+          },
+          "total": 85,
+          "unique": 10
+        },
+        "affection": {
+          "words": {
+            "affection": 1,
+            "tender": 3,
+            "tenderness": 1,
+            "fond": 1,
+            "devoted": 1,
+            "passion": 10,
+            "passionate": 1
+          },
+          "total": 18,
+          "unique": 7
+        },
+        "pain": {
+          "words": {
+            "pain": 13,
+            "anguish": 1,
+            "sorrow": 1,
+            "grief": 1,
+            "despair": 4,
+            "suffering": 12,
+            "suffer": 5,
+            "suffered": 2,
+            "misery": 3,
+            "miserable": 5,
+            "wretched": 8,
+            "agony": 7
+          },
+          "total": 62,
+          "unique": 12
+        },
+        "loss": {
+          "words": {
+            "loss": 1,
+            "lost": 10,
+            "abandoned": 1,
+            "rejected": 1,
+            "separated": 1,
+            "parted": 1,
+            "parting": 1,
+            "farewell": 1
+          },
+          "total": 17,
+          "unique": 8
+        }
+      },
+      "total_romantic_words": 277,
+      "density_percentage": 0.851
+    },
+    "emotional_arc": {
+      "segments": [
+        {
+          "segment": 1,
+          "label": "Beginning",
+          "sentiment": {
+            "positive": 0.12494952251023192,
+            "negative": 0.0975661664392906,
+            "neutral": 0.7774761255115962,
+            "compound": 0.017057571623465207
+          },
+          "sentence_count": 733
+        },
+        {
+          "segment": 2,
+          "label": "Middle",
+          "sentiment": {
+            "positive": 0.12043929058663028,
+            "negative": 0.08184856753069578,
+            "neutral": 0.7977162346521147,
+            "compound": 0.06910300136425648
+          },
+          "sentence_count": 733
+        },
+        {
+          "segment": 3,
+          "label": "End",
+          "sentiment": {
+            "positive": 0.06533969986357435,
+            "negative": 0.05277489768076399,
+            "neutral": 0.8818894952251024,
+            "compound": 0.02833206002728514
+          },
+          "sentence_count": 733
+        }
+      ],
+      "total_segments": 3
+    },
     "distinctive_words": [
       {
-        "word": "upon",
-        "score": 0.3132
+        "word": "tell",
+        "score": 0.3029
       },
       {
-        "word": "would",
-        "score": 0.2649
-      },
-      {
-        "word": "one",
-        "score": 0.2649
-      },
-      {
-        "word": "could",
-        "score": 0.2649
-      },
-      {
-        "word": "even",
-        "score": 0.2093
-      },
-      {
-        "word": "little",
-        "score": 0.1934
+        "word": "white",
+        "score": 0.2977
       },
       {
         "word": "eyes",
-        "score": 0.1801
-      },
-      {
-        "word": "never",
-        "score": 0.1723
+        "score": 0.2484
       },
       {
         "word": "come",
-        "score": 0.1695
-      },
-      {
-        "word": "must",
-        "score": 0.1691
+        "score": 0.2338
       },
       {
         "word": "like",
-        "score": 0.1669
+        "score": 0.2301
       },
       {
-        "word": "time",
-        "score": 0.1669
+        "word": "let",
+        "score": 0.2289
       },
       {
-        "word": "great",
-        "score": 0.1669
-      },
-      {
-        "word": "long",
-        "score": 0.166
-      },
-      {
-        "word": "back",
-        "score": 0.1597
-      },
-      {
-        "word": "love",
-        "score": 0.1566
+        "word": "heart",
+        "score": 0.2246
       },
       {
         "word": "man",
-        "score": 0.1537
+        "score": 0.2118
       },
       {
-        "word": "shall",
-        "score": 0.1535
-      },
-      {
-        "word": "yet",
-        "score": 0.1503
+        "word": "around",
+        "score": 0.2105
       },
       {
         "word": "face",
-        "score": 0.1503
+        "score": 0.2073
+      },
+      {
+        "word": "every",
+        "score": 0.1863
+      },
+      {
+        "word": "love",
+        "score": 0.1826
+      },
+      {
+        "word": "know",
+        "score": 0.168
+      },
+      {
+        "word": "see",
+        "score": 0.1644
+      },
+      {
+        "word": "make",
+        "score": 0.1555
+      },
+      {
+        "word": "yes",
+        "score": 0.1489
+      },
+      {
+        "word": "away",
+        "score": 0.1461
+      },
+      {
+        "word": "give",
+        "score": 0.1425
+      },
+      {
+        "word": "life",
+        "score": 0.1382
+      },
+      {
+        "word": "take",
+        "score": 0.1382
       }
     ]
   }
