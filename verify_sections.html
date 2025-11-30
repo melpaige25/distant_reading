@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Test</title>
+</head>
+<body>
+    <h1>Data Verification</h1>
+    <div id="output"></div>
+
+    <script>
+        fetch('analysis_results.json')
+            .then(r => r.json())
+            .then(data => {
+                const text = data[0];
+                let html = `<h2>${text.title}</h2>`;
+                html += `<p><strong>Has romantic_vocabulary:</strong> ${!!text.romantic_vocabulary}</p>`;
+                html += `<p><strong>Has emotional_arc:</strong> ${!!text.emotional_arc}</p>`;
+                html += `<p><strong>Has distinctive_words:</strong> ${!!text.distinctive_words}</p>`;
+
+                if (text.romantic_vocabulary) {
+                    html += `<h3>Romantic Vocabulary Data Found:</h3>`;
+                    html += `<p>Density: ${text.romantic_vocabulary.density_percentage}%</p>`;
+                    html += `<p>Total romantic words: ${text.romantic_vocabulary.total_romantic_words}</p>`;
+                    html += `<p>Categories: ${Object.keys(text.romantic_vocabulary.categories).join(', ')}</p>`;
+                } else {
+                    html += `<p style="color:red">NO romantic_vocabulary found!</p>`;
+                }
+
+                if (text.emotional_arc) {
+                    html += `<h3>Emotional Arc Data Found:</h3>`;
+                    html += `<p>Segments: ${text.emotional_arc.total_segments}</p>`;
+                } else {
+                    html += `<p style="color:red">NO emotional_arc found!</p>`;
+                }
+
+                if (text.distinctive_words) {
+                    html += `<h3>Distinctive Words Found:</h3>`;
+                    html += `<p>Count: ${text.distinctive_words.length}</p>`;
+                } else {
+                    html += `<p style="color:red">NO distinctive_words found!</p>`;
+                }
+
+                document.getElementById('output').innerHTML = html;
+            })
+            .catch(e => {
+                document.getElementById('output').innerHTML = `<p style="color:red">Error loading JSON: ${e.message}</p>`;
+            });
+    </script>
+</body>
+</html>
