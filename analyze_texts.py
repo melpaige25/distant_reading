@@ -205,19 +205,18 @@ class TextAnalyzer:
         if total_sentences < 3:
             return None
 
-        # Divide into 5 segments for a more detailed arc
-        segment_size = total_sentences // 5
+        # Divide into 3 segments - faster analysis
+        segment_size = total_sentences // 3
         segments = []
 
-        for i in range(5):
+        for i in range(3):
             start_idx = i * segment_size
-            if i == 4:  # Last segment gets any remaining sentences
+            if i == 2:  # Last segment gets any remaining sentences
                 end_idx = total_sentences
             else:
                 end_idx = (i + 1) * segment_size
 
             segment_sentences = sentences[start_idx:end_idx]
-            segment_text = ' '.join(segment_sentences)
 
             # Analyze sentiment for this segment
             segment_sentiments = [self.sentiment_analyzer.polarity_scores(sent) for sent in segment_sentences]
@@ -231,14 +230,14 @@ class TextAnalyzer:
 
             segments.append({
                 'segment': i + 1,
-                'label': ['Beginning', 'Early', 'Middle', 'Late', 'End'][i],
+                'label': ['Beginning', 'Middle', 'End'][i],
                 'sentiment': avg_sentiment,
                 'sentence_count': len(segment_sentences)
             })
 
         return {
             'segments': segments,
-            'total_segments': 5
+            'total_segments': 3
         }
 
     def extract_metadata(self, text, filename):
